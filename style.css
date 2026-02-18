@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -244,14 +255,14 @@ button {
     }
 }
 
-/* MOBILE RESPONSIVE */
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
 
     .navbar {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        gap: 20px;
         text-align: center;
+        padding: 20px;
     }
 
     .nav-links {
@@ -259,9 +270,53 @@ button {
         gap: 15px;
     }
 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero img {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
     .hero h1 {
         font-size: 28px;
     }
+
+    .cards {
+        grid-template-columns: 1fr !important;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .cards .card {
+        grid-column: auto !important;
+        width: 100%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .portfolio-cards {
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        width: 100%;
+    }
+
 
     /* FIXED MOBILE CARDS STRUCTURE */
     .cards {
@@ -383,6 +438,9 @@ button {
     color: white;
     padding: 60px 20px 20px;
     margin-top: 80px;
+}
+footer {
+    width: 100%;
 }
 
 .footer-container {
@@ -511,15 +569,6 @@ button {
 
 
 /* GLOBAL MOBILE FIX */
-
-@media (max-width: 768px) {
-
-    .about-container,
-    .services-container,
-    .portfolio-container {
-        padding: 60px 20px;
-    }
-
     .portfolio-cards {
         flex-direction: column;
     }
@@ -528,4 +577,3 @@ button {
     width: 100%;
 }
 
-}

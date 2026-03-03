@@ -89,8 +89,7 @@
 
 <!-- SERVICES CARDS SECTION (ON HOMEPAGE) -->
 <section class="services">
-  <h2>Our Technology Services</h2>
-
+  <h2 class="section-title">Our Technology Services</h2>
   <div class="services-grid">
 
     <div class="service-card" id="services">
@@ -264,11 +263,11 @@
 
 <script src="script.js"></script>
 <script>
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
 
 hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+  navLinks.classList.toggle("active");
 });
 </script>
 

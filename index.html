@@ -7,7 +7,15 @@
     
     <!-- SEO -->
     <meta name="description" content="Webinor is a Mumbai-based technology company offering web development, data analytics, Power BI dashboards and AI automation solutions for growing businesses.">
-    <meta name="keywords" content="website developer in Mumbai, web design company, SEO services Mumbai, data analytics, AI projects">
+    <meta name="keywords"
+content="web development company Mumbai,
+website developer Mumbai,
+Power BI dashboard developer,
+data analytics services,
+AI automation,
+business website development,
+responsive web design,
+app development Mumbai">
     <meta name="author" content="Webinor">
     <meta name="robots" content="index, follow">
 
@@ -45,6 +53,7 @@
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
+            <a href="#portfolio">Projects</a>
         </div>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -58,12 +67,14 @@
 <section class="hero">
   <div class="hero-content">
     <h1>
-      Web Development,<br>
-      <span>Data & AI Solutions</span><br>
-      for Modern Businesses
-    </h1>
+  We Build Websites, Apps & Dashboards
+  That Help Businesses Grow
+</h1>
 
-    <p>We Help Businesses <strong>Grow with Technology</strong></p>
+<p>
+  Webinor helps businesses with modern website development,
+  Power BI dashboards, data analytics and AI-powered solutions.
+</p>
 
     <div class="hero-buttons">
       <button class="btn primary" onclick="openPopup()">Get Free Consultation</button>
@@ -77,11 +88,24 @@
       <span class="close" onclick="closePopup()">&times;</span>
       <h3>Free Consultation</h3>
 
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Tell us about your project"></textarea>
+  <form action="https://formspree.io/f/yourformid" method="POST">
 
-      <button>Submit</button>
+  <input type="text"
+         name="name"
+         placeholder="Your Name"
+         required>
+
+  <input type="email"
+         name="email"
+         placeholder="Your Email"
+         required>
+
+  <textarea name="message"
+            placeholder="Tell us about your project"></textarea>
+
+  <button type="submit">Submit</button>
+
+</form>
     </div>
   </div>
 
@@ -96,6 +120,63 @@
       document.getElementById("popup").style.display = "none";
     }
   </script>
+
+<section class="portfolio" id="portfolio">
+
+  <h2 class="section-title">Recent Projects</h2>
+
+  <div class="portfolio-grid">
+
+    <div class="portfolio-card">
+      <img src="transcare.jpg" alt="Transcare Transport" loading="lazy">
+
+      <div class="portfolio-content">
+        <h3>Transcare Transport</h3>
+
+        <p>
+          Responsive transport business website with professional UI.
+        </p>
+
+        <a href="https://transcaretransport.in" target="_blank">
+          Visit Website →
+        </a>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="shubharang.png" alt="Shubharang" loading="lazy">
+
+      <div class="portfolio-content">
+        <h3>Shubharang</h3>
+
+        <p>
+          Modern responsive business website with optimized design.
+        </p>
+
+        <a href="https://shubharang.com" target="_blank">
+          Visit Website →
+        </a>
+      </div>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="wedding.png" alt="Wedding Invitation" loading="lazy">
+
+      <div class="portfolio-content">
+        <h3>Wedding Invitation Card</h3>
+
+        <p>
+          Interactive and responsive digital wedding invitation design.
+        </p>
+
+        <a href="https://nj626709-design.github.io/Jitesh-Sakshi_WeddingInvitation/" target="_blank">
+          View Demo →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- SERVICES CARDS SECTION (ON HOMEPAGE) -->
 <section class="services">
@@ -211,24 +292,29 @@
 <section class="stats">
     <div class="stats-container">
         <div>
-            <h2>2+</h2>
-            <p>Business Websites Delivered</p>
-        </div>
+  <h2>3+</h2>
+  <p>Projects Delivered</p>
+</div>
 
-        <div>
-            <h2>100%</h2>
-            <p>Client Satisfaction</p>
-        </div>
+<div>
+  <h2>Responsive</h2>
+  <p>Mobile-Friendly Designs</p>
+</div>
 
-        <div>
-            <h2>4+</h2>
-            <p>Core Technologies Used</p>
-        </div>
+<div>
+  <h2>Modern</h2>
+  <p>Scalable Technologies</p>
+</div>
     </div>
 </section>
 <div class="cta-section">
-    <h2>Ready to Transform Your Business with Technology?</h2>
-    <p>Let’s build something powerful and scalable together.</p>
+    <h2>
+  Need a Website, Dashboard or Business Automation Solution?
+</h2>
+
+<p>
+  Let’s build a modern digital solution for your business.
+</p>
     
     <a href="contact.html" class="cta-btn">Let's Work Together</a>
 </div>
@@ -281,6 +367,12 @@ hamburger.addEventListener("click", () => {
 });
 </script>
 
+<a href="https://wa.me/918689804547"
+   class="whatsapp-float"
+   target="_blank">
 
+   <img src="whatsapp.png" alt="WhatsApp">
+
+</a>
 </body>
 </html>
